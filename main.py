@@ -44,7 +44,7 @@ class Pokemon:
         version = ['Fuego', 'Agua', 'Hoja']
         for i,k in enumerate(version):
             if self.tipo == k:
-                # Son del mismo tipo
+                # Son del MISMO TIPO
                 if Pokemon2.tipo == k:
                     string_1_ATAQUE = '\nNo es muy efectivo...'
                     string_2_ATAQUE = '\nNo es muy efectivo...'
@@ -204,17 +204,18 @@ def delay_print(s):
 
 if __name__ == '__main__':
     #Create Pokemon
-    Charizard = Pokemon('Charizard', 'Fuego', ['Flamethrower', 'Fly', 'Blast Burn', 'Fuego Punch'], {'ATAQUE':12, 'DEFENSA': 8})
-    Blastoise = Pokemon('Blastoise', 'Agua', ['Agua Gun', 'Bubblebeam', 'Hydro Pump', 'Surf'],{'ATAQUE': 10, 'DEFENSA':10})
-    Venusaur = Pokemon('Venusaur', 'Hoja', ['Vine Wip', 'Razor Leaf', 'Earthquake', 'Frenzy Plant'],{'ATAQUE':8, 'DEFENSA':12})
+    Charizard = Pokemon('Charizard', 'Fuego', ['Lanzallamas', 'Vuelo', 'Anillo Ígneo', 'Puño Fuego'], {'ATAQUE':12, 'DEFENSA': 8})
+    Blastoise = Pokemon('Blastoise', 'Agua', ['Disparo Agua', 'Rayo Burbuja', 'Hidrobomba', 'Surf'],{'ATAQUE': 10, 'DEFENSA':10})
+    Venusaur = Pokemon('Venusaur', 'Hoja', ['Látigo Cepa', 'Hoja Razor', 'Terremoto', 'Planta loca'],{'ATAQUE':8, 'DEFENSA':12})
 
-    Charmander = Pokemon('Charmander', 'Fuego', ['Ember', 'Scratch', 'Tackle', 'Fuego Punch'],{'ATAQUE':4, 'DEFENSA':2})
-    Squirtle = Pokemon('Squirtle', 'Agua', ['Bubblebeam', 'Tackle', 'Headbutt', 'Surf'],{'ATAQUE': 3, 'DEFENSA':3})
-    Bulbasaur = Pokemon('Bulbasaur', 'Hoja', ['Vine Wip', 'Razor Leaf', 'Tackle', 'Leech Seed'],{'ATAQUE':2, 'DEFENSA':4})
+    Charmander = Pokemon('Charmander', 'Fuego', ['Brasas', 'Arañar', 'Golpe', 'Puño Fuego'],{'ATAQUE':4, 'DEFENSA':2})
+    Squirtle = Pokemon('Squirtle', 'Agua', ['Rayo Burbuja', 'Golpe', 'Golpe Cabeza', 'Surf'],{'ATAQUE': 3, 'DEFENSA':3})
+    Bulbasaur = Pokemon('Bulbasaur', 'Hoja', ['Látigo Cepa', 'Hoja Razor', 'Golpe', 'Semilla Sanguijuela'],{'ATAQUE':2, 'DEFENSA':4})
 
-    Charmeleon = Pokemon('Charmeleon', 'Fuego', ['Ember', 'Scratch', 'Flamethrower', 'Fuego Punch'],{'ATAQUE':6, 'DEFENSA':5})
-    Wartortle = Pokemon('Wartortle', 'Agua', ['Bubblebeam', 'Agua Gun', 'Headbutt', 'Surf'],{'ATAQUE': 5, 'DEFENSA':5})
-    Ivysaur = Pokemon('Ivysaur\t', 'Hoja', ['Vine Wip', 'Razor Leaf', 'Bullet Seed', 'Leech Seed'],{'ATAQUE':4, 'DEFENSA':6})
+    Charmeleon = Pokemon('Charmeleon', 'Fuego', ['Brasas', 'Arañar', 'Lanzallamas', 'Puño Fuego'],{'ATAQUE':6, 'DEFENSA':5})
+    Wartortle = Pokemon('Wartortle', 'Agua', ['Rayo Burbuja', 'Disparo Agua', 'Golpe Cabeza', 'Surf'],{'ATAQUE': 5, 'DEFENSA': 5})
+    Ivysaur = Pokemon('Ivysaur\t', 'Hoja', ['Látigo Cepa', 'Hoja razor', 'Semilla Bala', 'Semilla Sanguijuela'],{'ATAQUE':4, 'DEFENSA':6})
+
 
 
     Bulbasaur.pelear(Charizard) # Pelea!
